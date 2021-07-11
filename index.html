@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/164505559_2866110103710236_5676439165632683355_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=E_rk1kiy_ZUAX8dPLjq&_nc_ht=scontent-xsp1-3.xx&oh=9ddf77e81bea459491105286cf1dbe6f&oe=60F08A92"/>
 <style>
     :root {
         --primary-color: #ec1f55;
@@ -268,57 +269,157 @@
             // config: {},
             // (1/2) Uncomment the line below to use localStorage
             config: JSON.parse(localStorage.getItem(PlAYER_STORAGE_KEY)) || {},
-            songs: [
-                {
-                name: "Tay Trái Chỉ Trăng",
-                singer: "Phạm Nhứt Duy Nguyên ft Lee Phú Quý",
-                path: "https://mp3-320s1-zmp3.zadn.vn/be861ec40e83e7ddbe92/453772766841055295?authen=exp=1613988632~acl=/be861ec40e83e7ddbe92/*~hmac=2a1b8ba78f5536b1bd269e07836a0d33&amp;fs=MTYxMzgxNTgzMjQzMnx3ZWJWNnwxMDEyODkyMjU3fDE0LjE3Ni45Ny4xNzU",
-                image: "https://scontent.fvca1-2.fna.fbcdn.net/v/t1.0-9/21192796_1878144129173510_1086652095268842653_n.jpg?_nc_cat=109&ccb=3&_nc_sid=a4a2d7&_nc_ohc=ouw6F2-Y2dsAX_4Hebk&_nc_ht=scontent.fvca1-2.fna&oh=f6b9356f90815ea47aeeddd0255a8b14&oe=605486D7"
-                },
-                {
-                name: "Yến Vô Huyết",
-                singer: "Phạm Nhứt Duy Nguyên ft Lee Phú Quý",
-                path: "https://mp3-320s1-zmp3.zadn.vn/7c450b8686c16f9f36d0/8011765499059741194?authen=exp=1613989019~acl=/7c450b8686c16f9f36d0/*~hmac=4e5365f26fc3bff7a6a80658da6dd4f6&fs=MTYxMzgxNjIxOTgzNXx3ZWJWNnwxMDEyODkyMjU3fDE0LjE3Ni45Ny4xNzU",
-                image:
-                    "https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/148964340_2836009880053592_4965465620585628967_n.jpg?_nc_cat=111&ccb=3&_nc_sid=174925&_nc_ohc=dUFZbEWrxeQAX9uXUiI&_nc_ht=scontent.fdad2-1.fna&oh=265a43dde7918b677243936e8ea0763b&oe=60564A1E"
-                },
-                {
-                name: "Thiên Hạ Hữu Nhân Tình",
-                singer: "Phạm Nhứt Duy Nguyên ft Lee Phú Quý",
-                path:
-                    "https://mp3-320s1-zmp3.zadn.vn/ddd2f7376973802dd962/8572386082771914731?authen=exp=1613989976~acl=/ddd2f7376973802dd962/*~hmac=7aa445888485b7b339e96bc49a1e5a77&fs=MTYxMzgxNzE3NjmUsIC5NXx3ZWJWNnwxMDEyODkyMjU3fDE0LjE3Ni45Ny4xNzU",
-                image:
-                    "https://scontent.fvca1-1.fna.fbcdn.net/v/t1.0-9/30127923_1990060291315226_3948932475429847040_n.jpg?_nc_cat=106&ccb=3&_nc_sid=09cbfe&_nc_ohc=0lTep2BH5IgAX8bHcFV&_nc_ht=scontent.fvca1-1.fna&oh=dd677d88967b7f7060d9e073da5a26e7&oe=605850AA"
-                },
-                {
-                name: "Tát Nhật Lãng Rực Rỡ",
-                singer: "Phạm Nhứt Duy Nguyên ft Lee Phú Quý",
-                path: "https://mp3-320s1-zmp3.zadn.vn/ca7465f279b590ebc9a4/2838059006499556924?authen=exp=1613990042~acl=/ca7465f279b590ebc9a4/*~hmac=7fd9ce996957d9fb0d3fe4ee946b99b2&fs=MTYxMzgxNzI0MjUxOHx3ZWJWNnwxMDEyODkyMjU3fDE0LjE3Ni45Ny4xNzU",
-                image:
-                    "https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/95264670_2592878704366712_7054125098076209152_o.jpg?_nc_cat=110&ccb=3&_nc_sid=174925&_nc_ohc=upi6YGDSZOcAX8q8npK&_nc_ht=scontent.fdad2-1.fna&oh=83b73889962c458317280a6cec68cb15&oe=60551A79"
-                },
-                {
-                name: "Giấc Mơ Và Cây Diệp Anh Đào",
-                singer: "Phạm Nhứt Duy Nguyên ft Tiểu Muội Màn Thầu",
-                path:
-                    "https://mp3-320s1-zmp3.zadn.vn/1207332cac6b45351c7a/6490706700034601518?authen=exp=1613989581~acl=/1207332cac6b45351c7a/*~hmac=4b16793c8b07a2e16a95794b6f5d53ca&fs=MTYxMzgxNjmUsIC4MTYyOHx3ZWJWNnwxMDEyODkyMjU3fDE0LjE3Ni45Ny4xNzU",
-                image: "https://scontent.fvca1-1.fna.fbcdn.net/v/t1.0-9/139535044_2817328158588431_2303577297217788683_o.jpg?_nc_cat=103&ccb=3&_nc_sid=174925&_nc_ohc=Er9fzIiB_MAAX9Iscw2&_nc_ht=scontent.fvca1-1.fna&oh=a0c8bac5e756c17d9acda73d9ef31506&oe=6057FEF6"
-                },
-                {
-                name: "Thiếu Niên",
-                singer: "Phạm Nhứt Duy Nguyên ft Tiểu Muội Màn Thầu",
-                path: "https://mp3-320s1-zmp3.zadn.vn/51dcbbb9eefe07a05eef/651510232901241406?authen=exp=1613989682~acl=/51dcbbb9eefe07a05eef/*~hmac=2591453b27c9f7272ec8c3444d3594bd&fs=MTYxMzgxNjg4MjM2N3x3ZWJWNnwxMDEyODkyMjU3fDE0LjE3Ni45Ny4xNzU",
-                image:
-                    "https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/104438356_2639134769741105_527848905092569933_n.jpg?_nc_cat=110&ccb=3&_nc_sid=174925&_nc_ohc=vPiBOArATSoAX8JIaTx&_nc_ht=scontent.fdad2-1.fna&oh=5d350742c2b630059ac68c12e0f50a28&oe=605500A0"
-                },
-                {
-                name: "Mang Chủng",
-                singer: "Phạm Nhứt Duy Nguyên ft Tiểu Muội Màn Thầu",
-                path: "https://mp3-320s1-zmp3.zadn.vn/05ff0bf12fb6c6e89fa7/1669184412963570635?authen=exp=1613989812~acl=/05ff0bf12fb6c6e89fa7/*~hmac=add1f3867720285eeb6e4b7838ce48f4&fs=MTYxMzgxNzAxMjA2Nnx3ZWJWNnwxMDEyODkyMjU3fDE0LjE3Ni45Ny4xNzU",
-                image:
-                    "https://scontent.fvca1-2.fna.fbcdn.net/v/t1.0-9/64683911_2321044044883514_6411037497362481152_o.jpg?_nc_cat=101&ccb=3&_nc_sid=174925&_nc_ohc=qUJ3PiclNLcAX_qnyjn&_nc_ht=scontent.fvca1-2.fna&oh=6e50422876ab6bec22b9aedf4705ee43&oe=6055E341"
-                }
-            ],
+            songs: [{
+                singer: "Sleepy",
+                name: "3 (Britney Spears)",
+                path: "https://mp3-320s1-zmp3.zadn.vn/36709a1f0159e807b148/577305024899252579?authen=exp=1626175847~acl=/36709a1f0159e807b148/*~hmac=b22c0cda642adccd4deff559fc7ad527&amp;fs=MTYyNjAwMzA0NzU4MHx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/164505559_2866110103710236_5676439165632683355_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=E_rk1kiy_ZUAX8dPLjq&_nc_ht=scontent-xsp1-3.xx&oh=9ddf77e81bea459491105286cf1dbe6f&oe=60F08A92"
+            },{
+                singer: "NIKI",
+                name: "Lowkey",
+                path: "https://mp3-320s1-zmp3.zadn.vn/f724b5452e03c75d9e12/1799793670761986691?authen=exp=1626176188~acl=/f724b5452e03c75d9e12/*~hmac=282a207982848eaf7ec6a7d34c9fd833&amp;fs=MTYyNjAwMzM4ODmUsIC4Nnx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/139535044_2817328158588431_2303577297217788683_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=F22cT_hexoMAX_d7oMk&tn=i3tnABLL-ZIrI-8O&_nc_ht=scontent-sin6-4.xx&oh=2688ec3c3ac927d007223a78df79b6cc&oe=60EF6FE7"
+            },{
+                singer: "Little Mix",
+                name: "Salute",
+                path: "https://mp3-320s1-zmp3.zadn.vn/ac7f021e995870062949/6517636428486064226?authen=exp=1626176171~acl=/ac7f021e995870062949/*~hmac=91dc07f2dd0c17634ee6326965c74a3a&amp;fs=MTYyNjAwMzM3MTM3MXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/148964340_2836009880053592_4965465620585628967_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=174925&_nc_ohc=QeoKAHQLZ5oAX8qtvkx&_nc_ht=scontent-xsp1-3.xx&oh=fa5282145d814abc57ac3c3b9e8e2d1d&oe=60F0837F"
+            },{
+                singer: "Britney Spears ft. Sabi",
+                name: "Beautiful",
+                path: "https://mp3-320s1-zmp3.zadn.vn/18463d28a66e4f30167f/5254395266357995857?authen=exp=1626176070~acl=/18463d28a66e4f30167f/*~hmac=a4557ea0214d2b272ca572e3785c4c1d&amp;fs=MTYyNjAwMzI3MDY0OXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-1.xx.fbcdn.net/v/t1.6435-9/104438356_2639134769741105_527848905092569933_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=174925&_nc_ohc=Q84Vw_poLjsAX923SiX&tn=i3tnABLL-ZIrI-8O&_nc_ht=scontent-xsp1-1.xx&oh=48242451ed2727102e4b8ee9818cc9e3&oe=60F05D8E"
+            },{
+                singer: "Tape Machines",
+                name: "3D Print",
+                path: "https://mp3-320s1-zmp3.zadn.vn/6615d47a4f3ca662ff2d/2846251720223634220?authen=exp=1626175963~acl=/6615d47a4f3ca662ff2d/*~hmac=4e6aa26341d6e29858a5cfc661c6f3b1&amp;fs=MTYyNjAwMzE2Mzg4NXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/69610452_2366641130323805_4001238056039350272_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=fJSvVfu_Hh0AX98Wtsf&_nc_oc=AQkjaYfKES9b3t6w3wZonmfdPj0y6CQPjICXC3z9r2QkUW3I-T4_moSRk7j8B-zRrY0&tn=i3tnABLL-ZIrI-8O&_nc_ht=scontent-sin6-4.xx&oh=5174098924a5b6c1d7e8c4448df5a652&oe=60EF2743"
+            },{
+                singer: "Zedd & Katy Pery",
+                name: "365",
+                path: "https://mp3-320s1-zmp3.zadn.vn/af562439bf7f56210f6e/3958912754105711359?authen=exp=1626176037~acl=/af562439bf7f56210f6e/*~hmac=0447ff5ab8e3a2152fff9d4c5992dc18&amp;fs=MTYyNjAwMzIzNzQ1N3x3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.18169-9/22365239_1895554237432499_2738393264234974307_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=730e14&_nc_ohc=vkL7bgB0AncAX-DFEe5&_nc_ht=scontent-sin6-4.xx&oh=e2ec258fb7a03a157cf5aff8f2985bae&oe=60EEFC47"
+            },{
+                singer: "Sleepy",
+                name: "A Little Bit Crazy",
+                path: "https://mp3-320s1-zmp3.zadn.vn/38e1ae8e35c8dc9685d9/8566209145574737993?authen=exp=1626176214~acl=/38e1ae8e35c8dc9685d9/*~hmac=367321519530a982aa5cfc3da9762a6c&amp;fs=MTYyNjAwMzQxNDg0NXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t31.18172-8/28515024_1971428573178398_5256615526751084917_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=84a396&_nc_ohc=PF96g-XqPJYAX9_b_CE&_nc_ht=scontent-sin6-4.xx&oh=57a505b953950b882ed8aec3e0ce04fb&oe=60EF8DB9"
+            },{
+                singer: "Karmin",
+                name: "Acapella",
+                path: "https://mp3-320s1-zmp3.zadn.vn/bfff5c90c7d62e8877c7/2684127156011580700?authen=exp=1626176244~acl=/bfff5c90c7d62e8877c7/*~hmac=93d81c18dd864e69fb93ef2a7d961b27&amp;fs=MTYyNjAwMzQ0NDg1OHx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/51518294_2216475618673691_6330551304884060160_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=zcpBrtZ2VQ0AX8rqAPS&_nc_ht=scontent-sin6-2.xx&oh=9f0d1de2d189edd2999eee5b890c3de7&oe=60F06D04"
+            },{
+                singer: "Sleepy",
+                name: "All About Him",
+                path: "https://mp3-320s1-zmp3.zadn.vn/5a59a0363b70d22e8b61/5088994334698412579?authen=exp=1626176271~acl=/5a59a0363b70d22e8b61/*~hmac=5d860af97b0b6e149dffe891ca7eb97c&amp;fs=MTYyNjAwMzQ3MTM0NHx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/83286940_2504623709858879_217678928360243200_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=DdywvodveiUAX8ZO293&tn=i3tnABLL-ZIrI-8O&_nc_ht=scontent-sin6-4.xx&oh=5b8e971328940421874f2845a2ed7e4d&oe=60F0A53C"
+            },{
+                singer: "Madison Beer",
+                name: "Baby",
+                path: "https://mp3-320s1-zmp3.zadn.vn/8fd547badcfc35a26ced/8986776203818841867?authen=exp=1626176298~acl=/8fd547badcfc35a26ced/*~hmac=5eacd441966eb76a41c815a2876df8e4&amp;fs=MTYyNjAwMzQ5ODU5NHx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/119574792_2715382855449629_1081375852865541350_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=LCRgOMmeEo4AX8kmW2i&_nc_ht=scontent-sin6-2.xx&oh=d82d418f4fef456081956145a1628fa3&oe=60F0C5F3"
+            },{
+                singer: "Mia Martina",
+                name: "Beast",
+                path: "https://mp3-320s1-zmp3.zadn.vn/ae62840c1f4af614af5b/6245125311279519358?authen=exp=1626176326~acl=/ae62840c1f4af614af5b/*~hmac=0bc2b23fc4ace3ba6e0acd1555645d9e&amp;fs=MTYyNjAwMzUyNjg1N3x3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/119669375_2715383118782936_7654708638379921843_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=J3WcaMGH4ioAX8txjTC&_nc_ht=scontent-sin6-2.xx&oh=9e23f22c7e82f2e827f88c6016b640ea&oe=60EF71EF"
+            },{
+                singer: "Ariana Grande",
+                name: "Bloodline",
+                path: "https://mp3-320s1-zmp3.zadn.vn/dc61e90f72499b17c258/5340922043251772691?authen=exp=1626176370~acl=/dc61e90f72499b17c258/*~hmac=d33f4ab0c471b86d98061440645ffff7&amp;fs=MTYyNjAwMzU3MDMyNHx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/215077333_2944285469226032_4906197096936101213_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=174925&_nc_ohc=4j0V8ZfZuwcAX8NMTPT&_nc_oc=AQlIlDSynoO5y-xY0q8YMB237xXjF5tHuoC4cYo1q6pxXga--RR932yjVRAPcxb8-kU&_nc_ht=scontent-sin6-2.xx&oh=5de3ae6b9e146b7670f3d2f587371926&oe=60F04BE0"
+            },{
+                singer: "Eurielle",
+                name: "City of The Dead",
+                path: "https://mp3-320s1-zmp3.zadn.vn/d613bf7d243bcd65942a/7219420039571280377?authen=exp=1626176398~acl=/d613bf7d243bcd65942a/*~hmac=feacc4042e709d6dd4d55e6d028cdd41&amp;fs=MTYyNjAwMzU5ODIxMXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent.fhan5-6.fna.fbcdn.net/v/t1.6435-9/74592350_2443208486000402_5951155909957779456_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=174925&_nc_aid=0&_nc_ohc=kL_eBsvF9kIAX9DtX6H&_nc_ht=scontent.fhan5-6.fna&oh=f6115287743679ad99c573863d8ecd9c&oe=60F04C43"
+            },{
+                singer: "Ke$ha",
+                name: "C'mon",
+                path: "https://mp3-320s1-zmp3.zadn.vn/63a201cc9a8a73d42a9b/5514693476222596297?authen=exp=1626176420~acl=/63a201cc9a8a73d42a9b/*~hmac=8afadd869c7564f428dbc7cac0bf7413&amp;fs=MTYyNjAwMzYyMDmUsIC0Mnx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/122000967_2743318955989352_4584211852639063743_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=-bigL3n39KkAX_Y2qal&tn=i3tnABLL-ZIrI-8O&_nc_ht=scontent-xsp1-3.xx&oh=775f866340e6acdb5bc26a869b7b52f6&oe=60F001CE"
+            },{
+                singer: "Frank Fitzpatrick",
+                name: "Come On Now",
+                path: "https://mp3-320s1-zmp3.zadn.vn/90efe7817cc79599ccd6/6538758849210536300?authen=exp=1626176441~acl=/90efe7817cc79599ccd6/*~hmac=11ea6a0ec0af4b6f498952eebba32f8c&amp;fs=MTYyNjAwMzY0MTkyMXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/68498735_2345235329131052_7489954937342787584_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=454319&_nc_ohc=XD0eugcNunwAX96TvUh&tn=i3tnABLL-ZIrI-8O&_nc_ht=scontent-sin6-4.xx&oh=232ace44b4ecb46e1d5100d158927e8a&oe=60EF7CF1"
+            },{
+                singer: "Margaret",
+                name: "Cool Me Down",
+                path: "https://mp3-320s1-zmp3.zadn.vn/86dfd9b142f7aba9f2e6/5514316423735277249?authen=exp=1626176458~acl=/86dfd9b142f7aba9f2e6/*~hmac=b6bbe85760a26f5a8a392993c4c0bb1e&amp;fs=MTYyNjAwMzY1ODYwNnx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/67657227_2342769716044280_5926104306318049280_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=454319&_nc_ohc=0yKd7wX77U8AX_boLAP&_nc_ht=scontent-xsp1-3.xx&oh=5b1aea54e9d0e447e367c0176007b9f5&oe=60F0517F"
+            },{
+                singer: "Sabby Sousa",
+                name: "Cream n' Frosting",
+                path: "https://mp3-320s1-zmp3.zadn.vn/501dfb736035896bd024/8644312862564944512?authen=exp=1626176477~acl=/501dfb736035896bd024/*~hmac=6eee873bc27d985626406aa1fcd260cf&amp;fs=MTYyNjAwMzY3NzmUsICwM3x3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-1.xx.fbcdn.net/v/t1.6435-9/95264670_2592878704366712_7054125098076209152_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=174925&_nc_ohc=auGFX3bmEc8AX8HZERb&_nc_ht=scontent-xsp1-1.xx&oh=b356ea56eb0262f2297e2b6fc573c977&oe=60EEF6DB"
+            },{
+                singer: "Britney Spears",
+                name: "Criminal",
+                path: "https://mp3-320s1-zmp3.zadn.vn/89ef3881a3c74a9913d6/6037071909580726512?authen=exp=1626176507~acl=/89ef3881a3c74a9913d6/*~hmac=56e2a5ef184c5895289e6d5b9783b531&amp;fs=MTYyNjAwMzmUsICwNzQxNXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.18169-9/22154734_1891535451167711_4347625818007187143_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=1LK8ZnBzO1cAX-KRU5n&_nc_ht=scontent-sin6-4.xx&oh=b1bfd9fe8ca4a4c4666f420fb4cae66b&oe=60F02AEF"
+            },{
+                singer: "Sleepy",
+                name: "Dance (The Way It Moves)",
+                path: "https://mp3-320s1-zmp3.zadn.vn/cc7a4714dc52350c6c43/5729919607944772613?authen=exp=1626176531~acl=/cc7a4714dc52350c6c43/*~hmac=6d9d631b9d1d9dfdaffd70caa9a57c02&amp;fs=MTYyNjAwMzmUsICzMTE3NHx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/80873072_2464724060515511_2632346100933066752_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=454319&_nc_ohc=PHoDa7q54H0AX-vOc-z&_nc_oc=AQnZrIkEPdQW5QrEzuTJ1R3q4B0LJbsf6X2q7g19UejLXnjIFDTV9Lf3xt7puDZULw0&_nc_ht=scontent-sin6-4.xx&oh=b5864eb43d2d900d453dfd9232715eec&oe=60EF7BDC"
+            },{
+                singer: "Sugar Blizz",
+                name: "Dear Friend",
+                path: "https://mp3-320s1-zmp3.zadn.vn/ed297047eb01025f5b10/4666847503561722773?authen=exp=1626176551~acl=/ed297047eb01025f5b10/*~hmac=6c2976bb4ccb8ecde9d63a81f6168796&amp;fs=MTYyNjAwMzmUsIC1MTk3MXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/94351761_2589338194720763_5074606488467537920_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=454319&_nc_ohc=9yWXN2PLjHMAX-rO3qJ&_nc_ht=scontent-sin6-3.xx&oh=73b362452c35d9d7130feb860d927c5b&oe=60EFB4DA"
+            },{
+                singer: "Ameryh",
+                name: "Deep End",
+                path: "https://mp3-320s1-zmp3.zadn.vn/85966cf8f7be1ee047af/2872162085736882636?authen=exp=1626176567~acl=/85966cf8f7be1ee047af/*~hmac=476d7f74e1e70650af7e72296f50458b&amp;fs=MTYyNjAwMzmUsIC2ODAyM3x3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-1.xx.fbcdn.net/v/t1.6435-9/93979271_2586984238289492_8333803457093828608_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=454319&_nc_ohc=I308uCBnl9MAX-bSxOw&_nc_ht=scontent-xsp1-1.xx&oh=94156927f97cd4837ec36d4e1c087e4a&oe=60EFB481"
+            },{
+                singer: "Sleepy",
+                name: "FRIENDS",
+                path: "https://mp3-320s1-zmp3.zadn.vn/0ff5fb9b60dd8983d0cc/7702637757136752877?authen=exp=1626176588~acl=/0ff5fb9b60dd8983d0cc/*~hmac=fc80a7007d16f81fe1d2a5dc32d2ea88&amp;fs=MTYyNjAwMzmUsIC4ODY2N3x3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/106615313_2646775088977073_3131106565667899658_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=u5ATAvVz4CMAX_BB_K6&_nc_ht=scontent-xsp1-3.xx&oh=2ce4d9ab3a536258958bd5b88d33430e&oe=60EFCE90"
+            },{
+                singer: "Jax Jones & Bebe Rexha",
+                name: "Harder",
+                path: "https://mp3-320s1-zmp3.zadn.vn/d31a1a748132686c3123/6884670094675345793?authen=exp=1626176610~acl=/d31a1a748132686c3123/*~hmac=ad702a8ef17f5f6f68bc91ac10c1b436&amp;fs=MTYyNjAwMzgxMDk1NXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/119938937_2717006465287268_5861274160108813236_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=SUxYP_O949wAX-E4orA&_nc_ht=scontent-sin6-3.xx&oh=59547926f9cf4129d111bf7601f7b3b1&oe=60F00814"
+            },{
+                singer: "Ellie Goulding & Juice WRLD",
+                name: "Hate Me",
+                path: "https://mp3-320s1-zmp3.zadn.vn/3116ee78753e9c60c52f/4940329918298634682?authen=exp=1626176630~acl=/3116ee78753e9c60c52f/*~hmac=00fa733e25b86c529ddd0444625eb9a5&amp;fs=MTYyNjAwMzgzMDmUsIC2Nnx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-3.xx.fbcdn.net/v/t1.18169-9/20993087_1872059773115279_8302305010730262978_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=174925&_nc_ohc=7MmgeMvoye8AX_gb_hK&_nc_ht=scontent-xsp1-3.xx&oh=c09d855e6482074f00703c30526ddf83&oe=60F0414B"
+            },{
+                singer: "Sleepy",
+                name: "Heist",
+                path: "https://mp3-320s1-zmp3.zadn.vn/44276246f900105e4911/2023594938775946542?authen=exp=1626176651~acl=/44276246f900105e4911/*~hmac=10eb3ff844fdf02876870e7882248fe8&amp;fs=MTYyNjAwMzg1MTQ1N3x3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/119703277_2716399725347942_8718102790967837656_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=PeGR3kNsrBcAX_nKP6O&_nc_ht=scontent-sin6-2.xx&oh=d4e0f6964cf1d522f7a16ab8abec4d2f&oe=60F023CA"
+            },{
+                singer: "MOUNTAINS & MACHINES",
+                name: "Hero",
+                path: "https://mp3-320s1-zmp3.zadn.vn/fe5aca3b517db823e16c/7455827408154216938?authen=exp=1626176669~acl=/fe5aca3b517db823e16c/*~hmac=f474a60fac0e52753c5882a3cc816a0b&amp;fs=MTYyNjAwMzg3MDAwMnx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/120126345_2724278124560102_458736322601999974_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=_IKwXfgSDFUAX-iRHPH&_nc_ht=scontent-sin6-2.xx&oh=67b3008db8c6c92de647cc2b5f73b6a9&oe=60F0ABBC"
+            },{
+                singer: "Sleepy",
+                name: "Hey Mama",
+                path: "https://mp3-320s1-zmp3.zadn.vn/bac7b4a62fe0c6be9ff1/6288867064825856875?authen=exp=1626176686~acl=/bac7b4a62fe0c6be9ff1/*~hmac=61116c0de73a27bafb32cf5f07746378&amp;fs=MTYyNjAwMzg4NzAyMXx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/122431985_2744950772492837_5833648006834958300_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=0CmZ71ulNnkAX8WkNBB&_nc_ht=scontent-sin6-4.xx&oh=31091b7671718db2cd363740c49177b6&oe=60EFE5E8"
+            },{
+                singer: "Sleepy",
+                name: "Hollow Mind",
+                path: "https://mp3-320s1-zmp3.zadn.vn/fe179c760730ee6eb721/4671277980376362487?authen=exp=1626176704~acl=/fe179c760730ee6eb721/*~hmac=69e66930e057e38c050aad09a4505b25&amp;fs=MTYyNjAwMzkwNDYzNnx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/132255651_2797528787235035_7172736427627027143_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=BtbzChnenZ4AX-sx8Mr&_nc_ht=scontent-xsp1-3.xx&oh=001bd8a4c28bb9963496e31a3be61fff&oe=60EFDE2E"
+            },{
+                singer: "Alan Walker & K-391",
+                name: "Ignite",
+                path: "https://mp3-320s1-zmp3.zadn.vn/7b0d096c922a7b74223b/243378857161610121?authen=exp=1626176722~acl=/7b0d096c922a7b74223b/*~hmac=70534dbae7ea2f8ae57153a9cc9fb268&amp;fs=MTYyNjAwMzkyMjE1OHx3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/149666420_2837332443254669_1268836554574610677_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=Ah1nixeOmFoAX8_a3he&_nc_ht=scontent-sin6-4.xx&oh=3f8858a119b2c40777a9fd118eef8185&oe=60EF025C"
+            },{
+                singer: "HUGEL",
+                name: "WTF",
+                path: "https://mp3-320s1-zmp3.zadn.vn/dc9d78fce3ba0ae453ab/6168690119179741352?authen=exp=1626176742~acl=/dc9d78fce3ba0ae453ab/*~hmac=e2190a0e5e7cd7ce02777182e5139ca9&amp;fs=MTYyNjAwMzk0MjIzM3x3ZWJWNnwxMDEyODkyMjU3fDE3MS4yNDAdUngMjUxLjQ1",
+                image: "https://scontent-xsp1-1.xx.fbcdn.net/v/t1.6435-9/142778051_2825199487801298_2911768105363119902_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=5b7eaf&_nc_ohc=CdQFhsivlSsAX-JWCry&_nc_ht=scontent-xsp1-1.xx&oh=9a1f592af8b414cc6c10195be8282cc3&oe=60F02367"
+            }],
             setConfig: function (key, value) {
                 this.config[key] = value;
                 // (2/2) Uncomment the line below to use localStorage
